@@ -1,5 +1,6 @@
 {
     "author": "OpenStack Contributors",
+    "dependencies": [],
     "description": "Installs and configures OpenStack Magnum.",
     "issues_url": "https://bugs.launchpad.net/puppet-magnum",
     "license": "Apache-2.0",
