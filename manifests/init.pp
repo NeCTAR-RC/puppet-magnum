@@ -103,6 +103,10 @@
 #  rabbit (for rabbitmq)
 #  Defaults to 'rabbit'
 #
+# [*amqp_durable_queues*]
+#   (optional) Whether to use durable queues in AMQP.
+#   Defaults to $::os_service_default.
+#
 class magnum(
   $package_ensure             = 'present',
   $notification_transport_url = $::os_service_default,
@@ -126,6 +130,7 @@ class magnum(
   $rabbit_virtual_host        = $::os_service_default,
   $rabbit_password            = $::os_service_default,
   $rpc_backend                = 'rabbit',
+  $amqp_durable_queues        = $::os_service_default,
 ) {
 
   include ::magnum::deps
@@ -170,6 +175,7 @@ instead.")
     kombu_ssl_certfile      => $kombu_ssl_certfile,
     kombu_ssl_ca_certs      => $kombu_ssl_ca_certs,
     kombu_failover_strategy => $kombu_failover_strategy,
+    amqp_durable_queues     => $amqp_durable_queues,
   }
 
   oslo::messaging::default { 'magnum_config':
