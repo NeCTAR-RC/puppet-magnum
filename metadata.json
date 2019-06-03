@@ -14,10 +14,6 @@
             "version_requirement": ">=13.3.0 <14.0.0"
         },
         {
-            "name": "openstack/openstacklib",
-            "version_requirement": ">=13.3.0 <14.0.0"
-        },
-        {
             "name": "openstack/oslo",
             "version_requirement": ">=13.3.0 <14.0.0"
         }
