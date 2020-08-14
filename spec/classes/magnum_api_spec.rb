@@ -78,6 +78,18 @@ describe 'magnum::api' do
       end
     end
 
+    context 'when setting oslo_middleware parameters' do
+      before :each do
+        params.merge!(
+          :oslo_middleware_params => { 'enable_proxy_headers_parsing' => true }
+        )
+      end
+
+      it 'configures oslo_middleware section' do
+        is_expected.to contain_magnum_config('oslo_middleware/enable_proxy_headers_parsing').with_value('true')
+      end
+    end
+
     context 'with SSL enabled' do
       let :params do
         {

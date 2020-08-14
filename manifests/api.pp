@@ -64,6 +64,10 @@
 #   (Optional) Number of API workers.
 #   Defaults to $::os_workers
 #
+# [*oslo_middleware_params*]
+#   (Optional) Hash of configs to pass through to oslo::middleware class.
+#   Used for configuring oslo_middleware section of config.
+#
 class magnum::api(
   $package_ensure = 'present',
   $enabled        = true,
@@ -78,6 +82,7 @@ class magnum::api(
   $ssl_cert_file  = $::os_service_default,
   $ssl_key_file   = $::os_service_default,
   $workers        = $::os_workers,
+  $oslo_middleware_params = {},
 ) inherits magnum::params {
 
   include ::magnum::deps
@@ -149,4 +154,9 @@ class magnum::api(
   if $auth_strategy == 'keystone' {
     include ::magnum::keystone::authtoken
   }
+
+  oslo::middleware {'magnum_config':
+    * => $oslo_middleware_params,
+  }
+
 }
