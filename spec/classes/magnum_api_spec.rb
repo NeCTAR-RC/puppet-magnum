@@ -91,6 +91,16 @@ describe 'magnum::api' do
       it { is_expected.to contain_magnum_config('api/ssl_cert_file').with_value(p[:ssl_cert_file]) }
       it { is_expected.to contain_magnum_config('api/ssl_key_file').with_value(p[:ssl_key_file]) }
     end
+
+    context 'with oslo_middleware configured' do
+      let :params do
+        {
+          :enable_proxy_headers_parsing => true,
+        }
+      end
+
+      it { is_expected.to contain_magnum_config('oslo_middleware/enable_proxy_headers_parsing').with_value('true') }
+    end
   end
 
   shared_examples 'magnum-api wsgi' do
