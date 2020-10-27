@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    Added global quota configuration parameter "quota_clusters" to
+    configure the "quotas/max_clusters_per_project" setting.
