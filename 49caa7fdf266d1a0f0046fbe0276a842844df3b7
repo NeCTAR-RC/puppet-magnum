@@ -22,6 +22,30 @@
       "revId": "49caa7fdf266d1a0f0046fbe0276a842844df3b7",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "996a430f_76cf6809",
+        "filename": "manifests/quota.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-10-27T04:50:08Z",
+      "side": 1,
+      "message": "Shrug.  That\u0027s not how puppet-neutron does it ... which is where I copied this from.",
+      "parentUuid": "365964a8_5ca535b3",
+      "range": {
+        "startLine": 12,
+        "startChar": 31,
+        "endLine": 12,
+        "endChar": 33
+      },
+      "revId": "49caa7fdf266d1a0f0046fbe0276a842844df3b7",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
