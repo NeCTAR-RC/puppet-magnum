@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d78e1434_7d56099f",
+        "filename": "spec/classes/magnum_quota_spec.rb",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-10-29T02:29:24Z",
+      "side": 1,
+      "message": "do you need to override this fact? I cannot find any references to this fact in this test.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 9
+      },
+      "revId": "a362934f8d748b1efc899087ccb7fff3d10fa8b8",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
