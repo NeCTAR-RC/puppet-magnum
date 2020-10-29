@@ -22,6 +22,30 @@
       "revId": "a362934f8d748b1efc899087ccb7fff3d10fa8b8",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "960b8e29_8975ea27",
+        "filename": "spec/classes/magnum_quota_spec.rb",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-10-29T03:37:27Z",
+      "side": 1,
+      "message": "I think I\u0027ve fixed that.  Please check.  I think we still need to do a facts.merge ...",
+      "parentUuid": "d78e1434_7d56099f",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 9
+      },
+      "revId": "a362934f8d748b1efc899087ccb7fff3d10fa8b8",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
