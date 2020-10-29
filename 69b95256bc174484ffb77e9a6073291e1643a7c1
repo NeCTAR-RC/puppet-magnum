@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea1fbe42_59f1d630",
+        "filename": "releasenotes/notes/add-quota_parameters-31a5e7d20fb98c85.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-10-29T02:53:17Z",
+      "side": 1,
+      "message": "you should prob say here that you added a new class called `magnum::quotas`",
+      "revId": "69b95256bc174484ffb77e9a6073291e1643a7c1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
